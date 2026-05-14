@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>BMI CALCULATOR</title>
+</head>
+<body class="body">
+    <div class="container">
+        <h1>
+            <span class="color-1">BMI</span> 
+            <span class="color-2">CALCULATOR</span>
+        </h1>
+        <h2>Are You Healthy?</h2>
+        <div class="ageSelector">
+            <label for="age">Enter Your Age</label>
+            <input type="number" id="age" name="age"> 
+            <h3 id="ageValue"></h3>
+        </div>
+        <div class="genderSelector">
+            <label for="gender">Enter Your Gender</label>
+            <div class="genderOptions">
+                <input type="radio" name="gender" value="Female" id="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" value="Male" id="male">
+                <label for="male">Male</label>
+            </div>
+            <h3 id="ageValue"></h3>
+        </div>
+        <div class="heightSelector">
+            <label for="height">Enter Your Height(in cm)</label>
+            <input type="text" id="height" name="height"> 
+            <h3 id="heightValue"></h3>
+        </div>
+        <div class="weightSelector">
+            <label for="weight">Enter Your Weight(in kg)</label>
+            <input type="text" id="weight" name="weight"> 
+            <h3 id="weightValue"></h3>
+        </div>
+        <div class="bmiResult">
+            <button id="bmiBtn" onclick="calculateBMI()">Calculate BMI</button>
+            <h3 id="bmiValue"></h3>
+            <p id="res"></p>
+            <p id="suggestions"></p>
+        </div>
+        <div class="bmiBar">
+
+            <div class="indicator" id="indicator"></div>
+
+        </div>
+
+        <div class="labels">
+            <span>Underweight</span>
+            <span>Normal</span>
+            <span>Overweight</span>
+            <span>Obese</span>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
